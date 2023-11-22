@@ -64,7 +64,7 @@ export default function Login() {
     const mdUp = useResponsive('up', 'md');
     //Function to check if the user is already logged in - check localStorage 
     const user = JSON.parse(localStorage.getItem('profile'))
-    //If user logged in the page is auto directed to dashboard
+    //If user logged in to the page , it is auto directed to dashboard
     if(user){
       user.accessToken && (window.location.href=configData.DASHBOARD_URL)  
     }
